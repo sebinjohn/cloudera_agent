@@ -15,4 +15,4 @@ RUN echo 'root:toor' |  chpasswd
 COPY supervisord.conf /etc/supervisord.conf
 COPY config.ini /etc/cloudera-scm-agent/config.ini
 CMD ["/usr/local/bin/supervisord"]
-EXPOSE 22
+EXPOSE 22 9000
